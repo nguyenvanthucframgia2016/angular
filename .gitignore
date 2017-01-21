@@ -8,3 +8,14 @@ Homestead.yaml
 composer.lock
 /public/css
 /public/js
+/public/@angular
+/public/core-js
+/public/reflect-metadata
+/public/rxjs
+/public/systemjs
+/public/zone.js
+/zone
+npm-debug.log
+public/angular/app/**/*.js
+public/angular/app/**/*.js.map
+/typings

@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        {!! Html::style('css/app.css') !!}
 
         <!-- 1. Load libraries -->
             <!-- Polyfill(s) for older browsers -->
@@ -23,6 +24,8 @@
         </script>
     </head>
     <body>
-        <my-app>Loading...</my-app>
+        <div class="container">
+            <my-app>Loading...</my-app>
+        </div>
     </body>
 </html>

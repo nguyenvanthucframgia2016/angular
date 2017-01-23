@@ -22,5 +22,8 @@ elixir(mix => {
         .copy('node_modules/reflect-metadata', 'public/reflect-metadata')
         .copy('node_modules/systemjs', 'public/systemjs')
         .copy('node_modules/rxjs', 'public/rxjs')
-        .copy('node_modules/zone.js', 'public/zone.js');
+        .copy('node_modules/zone.js', 'public/zone.js')
+        .sass('common/common.scss', 'public/css/common')
+        .sass('footer/footer.scss', 'public/css/footer')
+        .sass('header/header.scss', 'public/css/header');
 });

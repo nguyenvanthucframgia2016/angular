@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         {!! Html::style('css/app.css') !!}
+        {!! Html::style('css/common/common.css') !!}
 
         <!-- 1. Load libraries -->
             <!-- Polyfill(s) for older browsers -->
@@ -25,6 +26,7 @@
     </head>
     <body>
         <div class="container">
+            <h4>Welcome to Angularjs 2</h4>
             <my-app>Loading...</my-app>
         </div>
     </body>

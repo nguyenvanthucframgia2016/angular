@@ -1,5 +1,15 @@
 #Config Angularjs 2 in Laravel 5.3
 
+##*. Install npm and nodejs
+
+```php
+sudo apt-get install npm
+sudo npm install -g n
+sudo n stable
+sudo apt-get install nodejs
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
 ##1. Open package.json file and paste
 
 ```php

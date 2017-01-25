@@ -246,3 +246,13 @@ npm run tsc:w
 ```php
 + File css trong cac component la doc lap voi nhau va khong anh huong den cac compoent khac. Va muc do uu tien css la trong cac file css cua component roi moi den cac file css duoc load truoc o trong root component
 ```
+
+##12. Binding data
+
+```php
+Co 4 cach binding
++ Interpolation
++ property binding
++ event binding
++ two way binding
+```

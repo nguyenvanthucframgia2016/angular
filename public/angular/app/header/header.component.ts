@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
     templateUrl: 'angular/app/header/index.html'
 })
 
-export class HeaderComponent {}
+export class HeaderComponent {
+    public header = 'Header component';
+    public color = '#4267b2';
+    public active = true;
+
+    public getStringHeader():string {
+        return 'get String Header';
+    }
+}

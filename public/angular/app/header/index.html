@@ -1,5 +1,27 @@
 <div class="row">
-    <h4>Header</h4>
+    <!-- Get Data from the class Property -->
+    <h4>{{ header }}</h4>
     <br>
+    <!-- Invoke a method in the component -->
+    <h4>{{ getStringHeader() }}</h4>
+    <br>
+    <!-- Concatenate two string -->
+    <h4>{{ 'Hello & Welcome to '+ ' ABC Bank ' }}</h4>
+    <br>
+    <!-- Perform some mathematical operations -->
+    <h4 style.color="{{ color }}">{{ 100*80 }}</h4>
+    <br>
+    <ul class="nav nav-tabs">
+        <li class.active="{{ active }}"><a href="#">Home</a></li>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+    </ul>
+    <br>
+    <p>
+        Note: interpolation la 1 one-way binding (binding 1 chieu) tu component ve view.
+        + Neu truyen 1 tham so la 1 array hoac object thi khong duoc dung interpolation vi interpolation bien tat ca cac field thanh string
+        + interpolation co the thay the property binding trong nhieu truong hop de viet code trong ro rang va sang sua hon boi vi angularjs cung bien dich cac interpolation thanh cac property binding tuong ung.
+    </p>
     <button class="btn btn-success">Header button</button>
 </div>

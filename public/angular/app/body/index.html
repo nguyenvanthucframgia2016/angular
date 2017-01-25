@@ -1,5 +1,24 @@
 <div class="row">
-    <h4>Body compoent</h4>
+    <!--
+        We write a template property binding when we want to set a property of a view element to the value of a template expression
+            + The most common property binding sets an element property to a component property value
+    -->
+    <img [src]="imageUrl">
+    <button [disabled]="isDisabled" class="btn btn-primary">Submit</button>
+
+    <!-- setting a property of a directive as ngClass, ngStyle -->
+    <div [ngClass]="[classes, marginTop10, marginBottom10]">[ngClass] binding to the classes property</div>
+
+    <br>
+    <!-- setting the model property of a custom component (a great way for parent and child components to communicate) -->
+
+    <!-- Note:
+        + Muon truyen gia tri tu component cha ve 1 component con thi can khai bao bien duoc truyen trong property cua view cha thong qua Input trong compoent con nhan
+     -->
+    <p>{{ hero.id }}</p>
+    <p>{{ hero.name }}</p>
+    <p>{{ hero.sex }}</p>
+    <br>
     <div class="body-class">
         Hello body class
     </div>

@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: `
-        <header-app></header-app>
-        <body-app></body-app>
-        <footer-app></footer-app>
-    `
+    templateUrl: 'angular/app/layout.html'
 })
 
-export class AppComponent { }
+export class AppComponent {
+    public hero = { id: 1, name: 'Nguyen Sa', sex: 'Male' };
+}

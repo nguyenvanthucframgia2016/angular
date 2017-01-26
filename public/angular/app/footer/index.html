@@ -39,4 +39,12 @@
     <button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
     <br>
     <button [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
+
+    <!-- Event binding -->
+    <br>
+    <input type="text" #name>
+    <button (click)="onClick(name.value)">Event binding on click</button>
+    <!-- neu muon truyen su kien cua chinh phan tu dang lang nghe su kien event binding thi them $event vao trong ham xu ly su kien
+        <button (click)="onClick($event)">Event binding on click</button>
+     -->
 </div>

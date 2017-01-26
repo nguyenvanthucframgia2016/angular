@@ -1,5 +1,24 @@
 <div class="row">
     <h4>footer component</h4>
+    <!-- We must use attribute binding when there is no element property to bind.
+        Consider the ARIA, SVG, and table span attributes. They are pure attributes. They do not correspond to element properties, and they do not set element properties. There are no property targets to bind to.
+    -->
+    <table [attr.height] = "height" [width] = "width" [border] = "border">
+        <tr>
+            <td [attr.colspan]="colspan">
+                One-two
+            </td>
+        </tr>
+        <tr>
+            <td>Five</td>
+            <td>Six</td>
+        </tr>
+    </table>
+
+    <br>
+    <svg [attr.width]="width" [attr.height]="height">
+        <circle cx="100" cy="100" [attr.r]="r" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
     <span>
         This is footer
     </span>

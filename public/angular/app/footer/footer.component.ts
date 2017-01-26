@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
     ]
 })
 
-export class FooterComponent {}
+export class FooterComponent {
+    public colspan = 2;
+    public height = 200;
+    public width = 600;
+    public border = 1;
+    public r = 100;
+}

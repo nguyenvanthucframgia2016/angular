@@ -16,4 +16,5 @@ export class FooterComponent {
     public border = 1;
     public r = 100;
     public dangerButton = true;
+    public isColor = false;
 }

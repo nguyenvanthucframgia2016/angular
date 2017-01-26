@@ -24,4 +24,19 @@
     <span class="btn" [class.btn-danger] = "dangerButton">
         This is footer
     </span>
+    <br>
+
+
+    <!-- We can set inline styles with a style binding -->
+    <button [style.color] = "isColor ? 'red' : 'blue'" class="btn btn-default">Red</button>
+    <!-- or -->
+    <!--
+        <button style.color = "{{ isColor ? 'red' : 'blue' }}" class="btn btn-default">Red</button>
+    -->
+
+    <!-- Some style binding styles have unit extension -->
+    <br>
+    <button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
+    <br>
+    <button [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
 </div>

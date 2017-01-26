@@ -15,4 +15,5 @@ export class FooterComponent {
     public width = 600;
     public border = 1;
     public r = 100;
+    public dangerButton = true;
 }

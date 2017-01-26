@@ -17,4 +17,8 @@ export class FooterComponent {
     public r = 100;
     public dangerButton = true;
     public isColor = false;
+
+    public onClick(value) {
+        console.log(value);
+    }
 }

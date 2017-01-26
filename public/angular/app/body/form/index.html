@@ -1,0 +1,15 @@
+<form>
+    <input type="text" [(ngModel)] = "name" name="name" class="form-control margin-btm-10 required" (focus) = "onFocus()">
+    <input type="text" [(ngModel)]="address" name="address" class="form-control margin-btm-10">
+    <input type="radio" [(ngModel)]="sex" name="sex" value="Male">Male
+    <input type="radio" [(ngModel)]="sex" name="sex" value="Female">Female
+    <br>
+    <button class="btn btn-primary margin-top-10">Submit</button>
+</form>
+
+<div class="row margin-top-10">
+    <p>Result</p>
+    <p>Name: {{ name }}</p>
+    <p>Address: {{ address }}</p>
+    <p>Sex: {{ sex }}</p>
+</div>

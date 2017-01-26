@@ -19,7 +19,9 @@
     <svg [attr.width]="width" [attr.height]="height">
         <circle cx="100" cy="100" [attr.r]="r" stroke="green" stroke-width="4" fill="yellow" />
     </svg>
-    <span>
+
+    <!-- We can add and remove CSS class names from the HTML element class attribute using CSS class binding -->
+    <span class="btn" [class.btn-danger] = "dangerButton">
         This is footer
     </span>
 </div>
